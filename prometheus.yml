@@ -8,6 +8,6 @@ scrape_configs:
       - targets: ['localhost:9090']
 
   # 如果你之後有安裝 node-exporter，可以在這裡增加：
-  # - job_name: 'node-exporter'
-  #   static_configs:
-    #   - targets: ['node-exporter:9100']
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['node-exporter:9100']
