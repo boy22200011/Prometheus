@@ -1,0 +1,13 @@
+global:
+  scrape_interval: 15s     # 預設每 15 秒抓取一次資料
+  evaluation_interval: 15s # 預設每 15 秒計算一次告警規則
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # 如果你之後有安裝 node-exporter，可以在這裡增加：
+  # - job_name: 'node-exporter'
+  #   static_configs:
+    #   - targets: ['node-exporter:9100']
