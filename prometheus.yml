@@ -5,7 +5,7 @@ global:
 scrape_configs:
   - job_name: 'prometheus'
     static_configs:
-      - targets: ['localhost:9090']
+      - targets: ['localhost:9000']
 
   # 如果你之後有安裝 node-exporter，可以在這裡增加：
   # - job_name: 'node-exporter'
